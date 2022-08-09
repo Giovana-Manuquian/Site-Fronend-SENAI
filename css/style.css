@@ -1,0 +1,283 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 90px;
+    display: inline-block;
+    background-color: #0581B6;
+}
+
+.logo {
+    float: left;
+    padding: 25px;
+    width: 75%;
+}
+
+.acesso {
+    margin-top: 25px;
+}
+
+.acesso a {
+    padding: 5px;
+
+    color: #ffffff;
+    background-color: #0c0b0b;
+    border-radius: 20px;
+
+    font-family: "Roboto";
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    font-weight: 100;
+    width: 50%;
+    height: 30px;
+}
+
+.menu {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: rgba(182, 174, 174, 0.925);
+    text-decoration: none;
+    /* tira a linha de marcação */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+    margin-top: -5px;
+}
+
+.busca input {
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    height: 15px;
+    width: 210px;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #aaaa;
+}
+
+.coluna-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+/* começo botões banner */
+/* seta esquerda banner */
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 21px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/seta-esquerda.png');
+    top: 50%;
+    left: 15%;
+}
+
+/* seta direita banner */
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 21px;
+    height: 56px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/seta-direita.png');
+    top: 50%;
+    right: 15%;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 495px;
+}
+
+li.slick-active button {
+    background: #0098c6;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/* final botões banner */
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.ofertas {
+    background-color: rgb(255, 249, 249);
+    padding-top: 30px;
+}
+
+.departamentos {
+    background-color: rgb(255, 249, 249);
+    padding-top: 30px;
+}
+
+.ofertas h2 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.departamentos h2 {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 30px;
+}
+
+.espaco-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardnews {
+    width: 11em;
+    height: 18.5em;
+    background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
+
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.cardnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.cardnews img {
+    width: 100%;
+}
+
+.texto-card {
+    width: 85%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.texto-card h3,
+.texto-card p {
+    margin: 0;
+}
+
+.cardnews h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cardnews .preco {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+footer {
+    background-color: #0098c6;
+}
+
+.rodape {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+
+    color: black;
+}
+
+.links-footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-footer h2 {
+    font-family: 'Titillium Web';
+    font-size: 21px;
+    margin: 0 30px;
+}
+
+.links-footer a {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.links-footer a:hover {
+    color: #0d6efd;
+}
+
+.redes {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes h2 {
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.redes img {
+    padding-top: 10px;
+    display: flex;
+    margin: 0 5px;
+}
